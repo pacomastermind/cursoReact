@@ -1,9 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import Celda from './Celda';
 
 function App() {
   return (
-    <div classname="container text-center" style={{ width: 340 }}>
+    <div className="container text-center" style={{ width: 340 }}>
       <div className="grid bg-body-secondary py-2 px-4 borderOutSide m-0">
         <div className="row bg-body-secondary borderInside ">
           <div className="d-flex flex-wrap justify-content-around">
@@ -22,10 +23,9 @@ function App() {
         <div className="row borderInside bg-body-secondary text-center justify-content-center">
           <div className="col my-1 p-0">
             <div className="d-flex flex-wrap justify-content-center">
-              <button
-                className="border border-2 border-dark-subtle fs-2 fw-bold text-success"
-                style={{ minWidth: 50, minHeight: 50 }}
-              />
+              <Celda />
+              <Celda />
+              <Celda />
             </div>
           </div>
         </div>
