@@ -21,11 +21,11 @@ function App() {
           </div>
         </div>
         <div className="row borderInside bg-body-secondary text-center justify-content-center">
-          <div className="col my-1 p-0">
+          <div className="col my- p-0">
             <div className="d-flex flex-wrap justify-content-center">
-              <Celda />
-              <Celda />
-              <Celda />
+              <Celda valor="1"/>
+              <Celda valor="2"/>
+              <Celda/>
             </div>
           </div>
         </div>
