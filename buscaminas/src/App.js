@@ -8,6 +8,12 @@ function App() {
   const celdas=mapaValores.map((item,index)=>
     <div className="col-auto p-0" key={index}><Celda valor={item}/></div>
   );
+
+  //Funcion respuesta al BTN
+  const btnComenzar = ()=>{
+    alert('COMIENZA LA PARTIDA')
+  }
+  
   return (
     <div className="container text-center" style={{ width: 340 }}>
       <div className="grid bg-body-secondary py-2 px-4 borderOutSide m-0">
@@ -33,8 +39,9 @@ function App() {
           </div>
         </div>
       </div>
+      <div><button className="btn btn-outline-secondary mt-2" onClick={btnComenzar}>COMIENZA LA PARTIDA</button></div>
     </div>
-
+    
   );
 }
 
