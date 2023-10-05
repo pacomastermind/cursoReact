@@ -3,6 +3,11 @@ import './App.css';
 import Celda from './Celda';
 
 function App() {
+  //Definir pro,valores componente
+  const mapaValores=["1","1","1","0","0","1","*","1","0","0","1","1","2","2","1","0","1","*","*","1","0","1","2","2","1"]; 
+  const celdas=mapaValores.map((item,index)=>
+    <div className="col-auto p-0" key={index}><Celda valor={item}/></div>
+  );
   return (
     <div className="container text-center" style={{ width: 340 }}>
       <div className="grid bg-body-secondary py-2 px-4 borderOutSide m-0">
@@ -23,9 +28,7 @@ function App() {
         <div className="row borderInside bg-body-secondary text-center justify-content-center">
           <div className="col my- p-0">
             <div className="d-flex flex-wrap justify-content-center">
-              <Celda valor="1"/>
-              <Celda valor="2"/>
-              <Celda/>
+              {celdas}
             </div>
           </div>
         </div>
