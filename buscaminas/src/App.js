@@ -1,17 +1,18 @@
 import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 import Celda from './Celda';
 
 function App() {
   //Definir pro,valores componente
-  const mapaValores=["1","1","1","0","0","1","*","1","0","0","1","1","2","2","1","0","1","*","*","1","0","1","2","2","1"]; 
+  const [mapaValores,setMapaValores]=useState(Array(25).fill(" "));
   const celdas=mapaValores.map((item,index)=>
     <div className="col-auto p-0" key={index}><Celda valor={item}/></div>
   );
 
   //Funcion respuesta al BTN
   const btnComenzar = ()=>{
-    alert('COMIENZA LA PARTIDA')
+    setMapaValores(["1","1","1","0","0","1","*","1","0","0","1","1","2","2","1","0","1","*","*","1","0","1","2","2","1"]);
   }
   
   return (
