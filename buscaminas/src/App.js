@@ -4,17 +4,27 @@ import './App.css';
 import Celda from './Celda';
 
 function App() {
-  //Definir pro,valores componente
+  //Valores
+  const valores=["1","1","1","0","0","1","*","1","0","0","1","1","2","2","1","0","1","*","*","1","0","1","2","2","1"];
+  //Definir state
   const [mapaValores,setMapaValores]=useState(Array(25).fill(" "));
   const celdas=mapaValores.map((item,index)=>
-    <div className="col-auto p-0" key={index}><Celda valor={item}/></div>
+    <div className="col-auto p-0" key={index}><Celda valor={item} onCeldaClick={() => mostrarValor(index)}/></div>
   );
 
   //Funcion respuesta al BTN
   const btnComenzar = ()=>{
-    setMapaValores(["1","1","1","0","0","1","*","1","0","0","1","1","2","2","1","0","1","*","*","1","0","1","2","2","1"]);
+    setMapaValores(Array(25).fill(" "));
   }
-  
+
+  //Funcion que cambia el valor de una celda
+  const mostrarValor = (index)=>{
+    const valoresNuevos = mapaValores.slice();
+    valoresNuevos[index] = valores[index];
+    setMapaValores(valoresNuevos);
+  }
+
+
   return (
     <div className="container text-center" style={{ width: 340 }}>
       <div className="grid bg-body-secondary py-2 px-4 borderOutSide m-0">
