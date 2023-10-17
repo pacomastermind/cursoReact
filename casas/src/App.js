@@ -59,7 +59,7 @@ function App() {
     }
 
     consigueCasas()
-  });
+  },[]);
  
   return (
     <>

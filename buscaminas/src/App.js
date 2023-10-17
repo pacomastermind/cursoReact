@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import { useState } from 'react';
 import './App.css';
 import Celda from './Celda';
+import Tiempo from './Tiempo';
 
 function App() {
   //Valores
@@ -34,12 +35,7 @@ function App() {
             <div className="align-self-center m-2 borderInsideS">
               <img src="acierto.png" style={{ width: 50 }} />
             </div>
-            <div
-              className="lcdText text-danger pe-2 m-2 borderInsideS"
-              style={{ width: 54 }}
-            >
-              00
-            </div>
+            <Tiempo/>
           </div>
         </div>
         <div className="row borderInside bg-body-secondary text-center justify-content-center">
