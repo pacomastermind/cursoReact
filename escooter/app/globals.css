@@ -1,3 +1,9 @@
-h1{
-  color:#B00020
+.contPrincipal{
+  margin-top: 64px;
+}
+.color404{
+  color: #6200EE;
+}
+.colorFilter404{
+  filter: invert(9%) sepia(80%) saturate(6074%) hue-rotate(268deg) brightness(115%) contrast(133%);
 }
