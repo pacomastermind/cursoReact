@@ -1,9 +1,11 @@
 import Image from 'next/image'
+import CarouselClient from './component/CarouselClient'
+
 
 export default function Home() {
   return (
-    <main class="contPrincipal">
-      <h1>Estoy en la pagina principal</h1>
-    </main>
+    <div className="container-fluid  pt-5 ">
+      <CarouselClient/>
+    </div>
   )
 }
