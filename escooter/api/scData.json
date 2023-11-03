@@ -5,7 +5,7 @@
         "img":"foto01.jpg",
         "modelo": "Xiaomi Mi Electric Scooter Pro",
         "txt": "La estructura del nuevo patinete Xiaomi Pro es plegable y resistente. Además es ligero (14.2 kg), y te permitirá transportarlo donde quieras o guardarlo sin que ocupe mucho espacio",
-        "destacado": 1,
+        "destacado": 0,
         "marca" : "Xiaomi",
         "precio": 546
     },
@@ -50,35 +50,9 @@
         "img":"foto06.jpg",
         "modelo": "Segway-Ninebot",
         "txt": "El patinete puede alcanzar una velocidad máxima de 25 km/h y tiene una capacidad de ascensión de un 16 %. Avanza con solo pulsar ligeramente el acelerador.",
-        "destacado": 0,
+        "destacado": 1,
         "marca" : "SegWay",
         "precio": 450
     }
-    ],
-    "prices":[
-        {
-            "idproduct":1,
-            "precio": 546
-        },
-        {
-            "idproduct":2,
-            "precio": 299
-        },
-        {
-            "idproduct":3,
-            "precio": 350
-        },
-        {
-            "idproduct":4,
-            "precio": 375
-        },
-        {
-            "idproduct":5,
-            "precio": 250
-        },
-        {
-            "idproduct":6,
-            "precio": 450
-        }
     ]
 }
