@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
           <div className="container-fluid">
             <Link className="navbar-brand d-flex  align-items-center" href="/">
               <img
-                src="./img/logo.png"
+                src="/img/logo.png"
                 alt="Logo"
                 height={35}
                 className="d-inline-block align-text-top"

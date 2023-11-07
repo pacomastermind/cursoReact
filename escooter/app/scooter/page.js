@@ -26,14 +26,11 @@ async function getProducts() {
 export default async function Scooter() {
     const products = await getProducts()
     const topProducts = await getTopProducts()
-    console.log(products)
-    console.log(topProducts)
-
     return (
     <>
     {/* CONTENIDO */}
     <div className="contPrincipal container mb-5">
-        <h2>Scooters ({products.lenght}) </h2>
+        <h2>Scooters ({products.length}) </h2>
         <div className="grid">
         <div className="row mt-3">
             <div className="col-8">
