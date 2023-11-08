@@ -14,8 +14,12 @@ async function getTopProducts() {
   }
 
 //Get data from json-server, Products
-async function getProducts() {
-    const res = await fetch('http://localhost:4000/products')
+async function getProducts(precio) {
+    let res
+
+    //Comprobamos que precio no esté vacio
+    if(precio) res = await fetch('http://localhost:4000/products?precio_lte='+precio)
+    else res = await fetch('http://localhost:4000/products')
    
     if (!res.ok) {
       throw new Error('Failed to fetch data')
@@ -24,9 +28,10 @@ async function getProducts() {
     return res.json()
   }
 
-export default async function Scooter() {
-    const products = await getProducts()
+export default async function Scooter({searchParams}) {
+    const products = await getProducts(searchParams.precio)
     const topProducts = await getTopProducts()
+    //console.log(searchParams)
     return (
     <>
     <SearchNav/>
