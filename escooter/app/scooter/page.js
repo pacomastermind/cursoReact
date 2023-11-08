@@ -1,5 +1,6 @@
 import ScooterCard from "../component/ScooterCard"
 import ScooterTop from "../component/ScooterTop"
+import SearchNav from "../component/SearchNav"
 
 //Get data from json-server, Top Products
 async function getTopProducts() {
@@ -28,8 +29,9 @@ export default async function Scooter() {
     const topProducts = await getTopProducts()
     return (
     <>
+    <SearchNav/>
     {/* CONTENIDO */}
-    <div className="contPrincipal container mb-5">
+    <div className="container mb-5 mt-5">
         <h2>Scooters ({products.length}) </h2>
         <div className="grid">
         <div className="row mt-3">
